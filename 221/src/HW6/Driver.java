@@ -17,7 +17,7 @@ public class Driver
         final int COLS_COUNT = 844;
         final int ROWS_COUNT = 480;
         //construct DrawingPanel, and get its Graphics context
-        DrawingPanel panel = new DrawingPanel(ROWS_COUNT, COLS_COUNT);
+        DrawingPanel panel = new DrawingPanel(COLS_COUNT, ROWS_COUNT);
         //DrawingPanel panel = new DrawingPanel(100, 100);
         Graphics g = panel.getGraphics();
         
