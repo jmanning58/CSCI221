@@ -34,16 +34,28 @@ public class MapDataDrawer {
   public int findMin() {
       int minVal = 0;
 
-      //for(int i = 0);
-      return 0;  
+      for(int i = 0; i < ROWS_COUNT; i++) {
+          for (int j = 0; j < COLS_COUNT; j++) {
+              if (minVal < grid[i][j])
+                  minVal = grid[i][j];
+          }
+      }
+      return minVal;
   }
   
   /**
    * @return the max value in the entire grid
    */
   public int findMax() {
-      // finish this method
-      return Integer.MAX_VALUE; 
+      int maxVal = 0;
+
+      for(int i = 0; i < ROWS_COUNT; i++) {
+          for (int j = 0; j < COLS_COUNT; j++) {
+              if (maxVal < grid[i][j])
+                  maxVal = grid[i][j];
+          }
+      }
+      return maxVal;
   }
   
   /**
@@ -51,10 +63,17 @@ public class MapDataDrawer {
    * @return the index of the row with the lowest value in the given col for the grid
    */
   public  int indexOfMinRow(int col){
-      // finish this method  
-      return 0;  
+      int indexOfRow = grid[0][col];
+      int minOfCol = 0;
+
+      for(int i = 0; i < ROWS_COUNT; i++) {
+          if(grid[i][col] < minOfCol) {
+              minOfCol = grid[i][col];
+              indexOfRow = i;
+          }
+      }
+      return indexOfRow;
   }
-  
   
   /**
    * DON'T CHANGE THIS CODE.
