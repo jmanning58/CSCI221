@@ -12,21 +12,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Program is set up to calculate Programming 221 class grades
+ */
 public class kitty {
-	
-	/**
-	 * @param args
-	 * 
-	 * TODO  
-     * PART 4:    output statements and if statements to print final semester score and letter grade,
-     * 
-     * PART 5:    Test program with several different data sets and verify that results are correct
-     * 
-	 */
 	
 	public static void main(String[] args)  {
 
-			Scanner requestGrade = new Scanner(System.in);		      // Giving this Scanner thing a shot
+			Scanner requestGrade = new Scanner(System.in);
 			
 			// Initialized 2 types of Lists to store grades and each item being assessed
 			List<Integer> grades = new ArrayList<Integer>();
@@ -41,8 +34,7 @@ public class kitty {
 				grades.add(grade);
 			}
 			requestGrade.close();            //  Closing the Scanner since you'll no longer be needing it
-			
-			// System.out.println(grades);             //  Checking my amazing work
+
 			System.out.println();
 			
 			double assignments;
@@ -61,14 +53,10 @@ public class kitty {
 		       }
 		    }
 		    
-		    // System.out.println(replacingPosition);                  //  Everything running like you think it should?  
-		    
 		    if (grades.get(replacingPosition) < grades.get(7))  {
 		         grades.add(replacingPosition, grades.get(7));
 		         grades.remove(replacingPosition + 1);
 		    }
-		    
-		    // System.out.println(grades);
 		    
 		    //   Now we get to put these lazy variables to work
 		    assignments = (grades.get(0) + grades.get(1) + grades.get(2)) / 3;

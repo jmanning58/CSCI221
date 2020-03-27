@@ -1,10 +1,49 @@
-public class Tester {
+public class A {
+    private int x = 25;
 
-    //System.out.println("C:/Users/vampi/eclipse-workspace/221/src/HW5/Salaries.csv");
+    public A() {
+        x = 10;
+    }
 
+    public void setX(int a) {
+        x = a;
+    }
 
-
+    public String toString() {
+        return "x = " + x;
+    }
 }
-/**
- * loops are the only way to get objects out of a list but not as objects
- */
+
+public class B extends A {
+
+    private int y;
+
+    public B(int a) {
+        super();
+        y = a;
+    }
+
+    public B(int a, int b) {
+        super();
+        setX(a);
+        y = b;
+    }
+
+    public String toString() {
+        return super.toString() + ", y = " + y;
+    }
+}
+
+    public class TestBandA {
+
+        public static void main (String[] args) {
+
+            B q = new B(100);
+            System.out.println(q);
+            A r = new A();
+            System.out.println(r);
+            B s = new B(1, 2);
+            System.out.println(s);
+        }
+    }
+}
