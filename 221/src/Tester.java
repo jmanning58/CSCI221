@@ -1,3 +1,4 @@
+/*
 public class A {
     private int x = 25;
 
@@ -46,4 +47,4 @@ public class B extends A {
             System.out.println(s);
         }
     }
-}
+}*/
