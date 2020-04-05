@@ -7,7 +7,7 @@ public class SalaryLookUp {
 
     public static void main(String[] args)  throws FileNotFoundException {
     
-        PlayerSalaries ps1 = new PlayerSalaries("C:\\Users\\vampi\\eclipse-workspace\\221\\src\\HW5\\Salaries.csv");
+        PlayerSalaries ps1 = new PlayerSalaries("Salaries.csv");
 
         Scanner userInput = new Scanner(System.in);
         List<String> choiceOptions = Arrays.asList

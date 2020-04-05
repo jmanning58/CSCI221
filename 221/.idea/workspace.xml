@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0abf2475-fa16-4f02-8463-0e9663ac7d9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/HW8/BulkDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW8/BuyNItemsGetOneFree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW8/CombinedDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW8/CouponDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW8/DiscountPolicy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW6/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW6/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW6/MapDataDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW6/MapDataDrawer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HW5/SalaryLookUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW5/SalaryLookUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,10 +133,11 @@
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state x="651" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1842.1080/-1600.-287.1600.860@0.0.1842.1080" timestamp="1583022810643" />
-    <state x="582" y="187" key="FileChooserDialogImpl" timestamp="1584113315632">
-      <screen x="65" y="0" width="1471" height="864" />
+    <state x="2461" y="485" key="FileChooserDialogImpl" timestamp="1586022556737">
+      <screen x="1920" y="290" width="1538" height="900" />
     </state>
     <state x="582" y="187" key="FileChooserDialogImpl/65.0.1471.864@65.0.1471.864" timestamp="1584113315632" />
+    <state x="2461" y="485" key="FileChooserDialogImpl/78.0.1842.1080/1920.290.1538.900@1920.290.1538.900" timestamp="1586022556737" />
     <state width="1799" height="287" key="GridCell.Tab.0.bottom" timestamp="1583960179098">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
@@ -160,13 +166,14 @@
       <screen x="65" y="0" width="1471" height="864" />
     </state>
     <state x="310" y="75" key="SettingsEditor/65.0.1471.864@65.0.1471.864" timestamp="1584121590823" />
-    <state x="558" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1584113233569">
-      <screen x="65" y="0" width="1471" height="864" />
+    <state x="695" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1586021215750">
+      <screen x="78" y="0" width="1842" height="1080" />
     </state>
     <state x="-1064" y="3" key="com.intellij.ide.util.TipDialog/0.0.1842.1080/-1600.-287.1600.860@-1600.-287.1600.860" timestamp="1582836447241" />
     <state x="617" y="364" key="com.intellij.ide.util.TipDialog/0.0.1842.1080/-1600.-287.1600.860@0.0.1842.1080" timestamp="1583095404242" />
     <state x="558" y="291" key="com.intellij.ide.util.TipDialog/65.0.1471.864@65.0.1471.864" timestamp="1584113233569" />
     <state x="2435" y="303" key="com.intellij.ide.util.TipDialog/78.0.1842.1080/1920.0.1538.900@1920.0.1538.900" timestamp="1584059732523" />
     <state x="695" y="364" key="com.intellij.ide.util.TipDialog/78.0.1842.1080/1920.0.1538.900@78.0.1842.1080" timestamp="1583960379469" />
+    <state x="695" y="364" key="com.intellij.ide.util.TipDialog/78.0.1842.1080/1920.290.1538.900@78.0.1842.1080" timestamp="1586021215750" />
   </component>
 </project>
