@@ -1,5 +1,14 @@
 package HW8;
 
+/**
+ * Jacob Manning
+ * CombinedDiscount class takes two discounts and adds them together
+ *
+ * CombinedDiscount calls computeDiscount on two separate DiscountPolicy
+ * objects, retrieving both of their max discounts. Then adds them together
+ * to find the total maximum combined discount.
+ */
+
 public class CombinedDiscount extends DiscountPolicy {
     private DiscountPolicy dis1;
     private DiscountPolicy dis2;

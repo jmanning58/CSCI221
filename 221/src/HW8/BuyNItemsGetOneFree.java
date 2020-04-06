@@ -1,5 +1,15 @@
 package HW8;
 
+/**
+ * Jacob Manning
+ * BuyNItemsGetOneFree class is made for when there is a set discount every nth item.
+ *
+ * BuyNItemsGerOneFree uses n to establish which items will be free within the purchase.
+ *  A for loop is used for checking each item to evaluate if it is the nth value when
+ *  i modulo n is zero plus n which would equal i if, and only if, the prior amount equals
+ *  zero. When the loop can no longer be used it exits.
+ */
+
 public class BuyNItemsGetOneFree extends DiscountPolicy {
     private int n;
 
