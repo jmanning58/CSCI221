@@ -1,3 +1,4 @@
+package HW9;
 
 /**
  * Process Persons of all types
@@ -24,7 +25,19 @@ public class UniversityPersonnel
      * 
      */
     public void addEmployee(Employee newHire) throws Exception{
-        
+
+        try {
+            for(int i = 0; i < ourEmployees.size(); i++) {
+
+
+                if (this.ourEmployees.get(i).equals(newHire)) {
+                    throw new Exception("Duplicate number, " + newHire.getName() + "cannot be added.");
+                }
+            }
+        }
+        catch (Exception excpt) {
+            System.out.println(excpt.getMessage());
+        }
         
     }
     
@@ -38,30 +51,58 @@ public class UniversityPersonnel
      * 
      */
     public void addStudent(Student newAdmit) throws Exception{
-        
-        
-    }
+
+
+        for(int i = 0; i < ourStudents.size(); i++) {
+
+
+            if (this.ourStudents.get(i).compareTo(newAdmit) == 0) {
+                throw new Exception("Duplicate number, " + newAdmit.getName() + "cannot be added.");
+                }
+            }
+        ourStudents.add(newAdmit);
+
+//        catch (Exception excpt) {
+//            System.out.println(excpt.getMessage());
+        }
+
+
     
     public void printStudents(){
-           
+
+        for(int i = 0; i < ourStudents.size(); i++) {
+            System.out.println(ourStudents.get(i));
+        }
         
     }
     
     public void printEmployees(){
            
-        
+        for(int i = 0; i < ourEmployees.size(); i++) {
+            System.out.println(ourEmployees.get(i));
+        }
     }
     
     public void printAll( ){
-        
+
+        // System.out.println("Students:");
+
+        for(int i = 0; i < ourStudents.size(); i++) {
+            System.out.println(ourStudents.get(i));
+        }
+
+        System.out.println("Employees:");
+
+        for(int i = 0; i < ourEmployees.size(); i++) {
+            System.out.println("i + 1" + ourEmployees.get(i));
+        }
     }
     
     public void sortStudents(){
-        
+        Collections.sort(ourStudents);
     }
     
     public void sortEmployees(){
-        
+        Collections.sort(ourEmployees);
     }
-   
 }

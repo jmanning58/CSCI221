@@ -1,7 +1,9 @@
+package HW9;
+
 /**
  * A Student is a special type of Person
  */
-public class Student extends Person
+public abstract class Student extends Person
 {
     // 1- freshman, 2- sophomore, 3- junior, 4- senior
     protected int studentNumber; 
@@ -48,5 +50,18 @@ public class Student extends Person
                                 otherStudent.studentNumber));
 
     }
-  
+    public String toString() {
+        return super.toString() + ", " + studentNumber;
+    }
+
+    public int compareTo(Person o) {
+        Student temp = (Student) o;
+        if (this.studentNumber < temp.studentNumber) {
+            return -1;
+        } else if (this.studentNumber > temp.studentNumber) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }

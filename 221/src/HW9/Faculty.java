@@ -1,3 +1,4 @@
+package HW9;
 
 /**
  * A Faculty member is a special type of Employee
@@ -33,5 +34,12 @@ public class Faculty extends Employee
              && (this.department.equals(
                                 other.department)));
 
+    }
+    public String toString() {
+        return super.toString() + ", " + department;
+    }
+
+    public int compareTo(Object o) {
+        return 0;
     }
 }

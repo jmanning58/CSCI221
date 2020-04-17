@@ -1,3 +1,4 @@
+package HW9;
 
 public class Undergraduate extends Student
 {
@@ -52,5 +53,13 @@ public class Undergraduate extends Student
     {
         return super.equals(other) &&
                (this.level == other.level);
-    }   
+    }
+
+    public String toString() {
+        return super.toString() + ", " + level;
+    }
+
+    public int compareTo(Object o) {
+        return 0;
+    }
 }

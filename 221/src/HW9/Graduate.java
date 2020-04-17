@@ -1,3 +1,4 @@
+package HW9;
 
 /**
  * A Graduate is a special type of Student
@@ -57,5 +58,12 @@ public class Graduate extends Student
     {
         return super.equals(other) &&
                (this.degree.equals(other.degree));
-    }	
+    }
+    public String toString() {
+        return super.toString() + ", " + degree;
+    }
+
+    public int compareTo(Object o) {
+        return 0;
+    }
 }

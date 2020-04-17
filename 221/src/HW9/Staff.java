@@ -1,3 +1,4 @@
+package HW9;
 
 /**
  * A staff member is a special type of Employee
@@ -33,6 +34,9 @@ public class Staff extends Employee
          return (super.equals(other) 
              && (this.numberOfYearsWorked ==
                                 other.numberOfYearsWorked));
-
     }
+    public int compareTo(Object o) {
+        return 0;
+    }
+
 }

@@ -1,10 +1,12 @@
+package HW9;
+
 /**
  * Sample Person class - superclass example
  */
-public class Person 
+public abstract class Person implements Comparable
 {
     // Names assumed to be stored in Last, First Name order
-    private String name; // since private, will need 
+    private String name; // since private, will need
                          // getter and setter methods for
                          // subclasses to access
     
@@ -43,5 +45,9 @@ public class Person
     public boolean hasSameName(Person otherPerson)
     {
         return this.name.equalsIgnoreCase(otherPerson.name);
-    } 
+    }
+
+    public String toString() {
+        return name;
+    }
 }
