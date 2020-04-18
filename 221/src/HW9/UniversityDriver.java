@@ -50,8 +50,8 @@ public class UniversityDriver {
                     3));
             a.addStudent(new Undergraduate("van Delden, Sebastion", 23000,
                     4));
-//            a.addStudent(new Graduate("Lombardi, Vince", 90000,
-//                    "PhD"));
+            a.addStudent(new Graduate("Lombardi, Vince", 90000,
+                   "PhD"));
         }
 
         catch (Exception excpt) {
