@@ -26,21 +26,14 @@ public class UniversityPersonnel
      */
     public void addEmployee(Employee newHire) throws Exception{
 
-        try {
-            for(int i = 0; i < ourEmployees.size(); i++) {
+        for(int i = 0; i < ourEmployees.size(); i++) {
 
-
-                if (this.ourEmployees.get(i).equals(newHire)) {
+                if (this.ourEmployees.get(i).compareTo(newHire) == 0) {
                     throw new Exception("Duplicate number, " + newHire.getName() + "cannot be added.");
                 }
             }
+        ourEmployees.add(newHire);
         }
-        catch (Exception excpt) {
-            System.out.println(excpt.getMessage());
-        }
-        
-    }
-    
       
     /**
      * This method, addStudent, adds a new Faculty or Staff member
@@ -62,11 +55,7 @@ public class UniversityPersonnel
             }
         ourStudents.add(newAdmit);
 
-//        catch (Exception excpt) {
-//            System.out.println(excpt.getMessage());
-        }
-
-
+    }
     
     public void printStudents(){
 
@@ -85,16 +74,16 @@ public class UniversityPersonnel
     
     public void printAll( ){
 
-        // System.out.println("Students:");
+        System.out.println("Students:");
 
         for(int i = 0; i < ourStudents.size(); i++) {
             System.out.println(ourStudents.get(i));
         }
-
+        System.out.println();
         System.out.println("Employees:");
 
         for(int i = 0; i < ourEmployees.size(); i++) {
-            System.out.println("i + 1" + ourEmployees.get(i));
+            System.out.println(ourEmployees.get(i));
         }
     }
     

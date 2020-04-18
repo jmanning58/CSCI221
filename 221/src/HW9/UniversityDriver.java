@@ -36,29 +36,30 @@ public class UniversityDriver {
                     "Sociology Department"));
             a.addEmployee(new Faculty("Lombardi, Vince", 90000,
                     "Sociology Department"));
-            a.addEmployee(new Faculty("Lombardi, Vince", 90000,
-                    "Sociology Department"));
+//            a.addEmployee(new Faculty("Lombardi, Vince", 90000,
+//                    "Sociology Department"));
             a.addEmployee(new Staff("Smith, Marilee", 11111, 4));
         }
 
-        catch (Exception excpt) {
-            System.out.println(excpt.getMessage());
+        catch (Exception caught) {
+            System.out.println(caught.getMessage());
         }
+
         try {
             a.addStudent(new Undergraduate("Spade, Sam", 456, 2));
             a.addStudent(new Undergraduate("van Delden, Sebastian", 11000,
                     3));
-            a.addStudent(new Undergraduate("van Delden, Sebastion", 23000,
+            a.addStudent(new Undergraduate("van Delden, Sebastion", 123000,
                     4));
             a.addStudent(new Graduate("Lombardi, Vince", 90000,
                    "PhD"));
         }
 
-        catch (Exception excpt) {
-            System.out.println(excpt.getMessage());
+        catch (Exception caughtAgain) {
+            System.out.println(caughtAgain.getMessage());
         }
 
-        System.out.println("The list of all the Employees: \n");
+        System.out.println("The list of all people: \n");
         a.printAll();
 
 //        for (Employee p : a) {
