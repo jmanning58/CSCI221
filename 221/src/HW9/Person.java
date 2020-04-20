@@ -1,8 +1,10 @@
 package HW9;
 
 /**
- * Sample Person class - superclass example
+ * Person class - superclass for: Student and Employee
  */
+
+//
 public abstract class Person implements Comparable
 {
     // Names assumed to be stored in Last, First Name order

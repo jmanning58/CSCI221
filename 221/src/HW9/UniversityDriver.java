@@ -1,18 +1,19 @@
 package HW9;
 
-
-
 import java.util.ArrayList;
 
 /**
- * Write a description of class UniversityDriver here.
+ * UniversityDriver is the main method class for the user to print and sort their lists
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Irving Purata and Jacob Manning
+ *
+ *
  */
 public class UniversityDriver {
     public static void main(String[] args) {
-        UniversityPersonnel a = new UniversityPersonnel();
+
+        //
+        UniversityPersonnel everyone = new UniversityPersonnel();
 
         // Test your classes by adding good data and attempting to
         // add bad data (Employees and Students whose numbers are duplicates
@@ -29,16 +30,16 @@ public class UniversityDriver {
         //  System.out.println(a);
         //ArrayList<Person> employees = new ArrayList<>();
         try {
-            a.addEmployee(new Staff("Spade, Sam", 456, 1002));
-            a.addEmployee(new Faculty("van Delden, Sebastian", 11000,
+            everyone.addEmployee(new Staff("Spade, Sam", 456, 1002));
+            everyone.addEmployee(new Faculty("van Delden, Sebastian", 11000,
                     "Computer Science Department"));
-            a.addEmployee(new Faculty("van Delden, Sebastion", 23000,
+            everyone.addEmployee(new Faculty("van Delden, Sebastion", 23000,
                     "Sociology Department"));
-            a.addEmployee(new Faculty("Lombardi, Vince", 90000,
+            everyone.addEmployee(new Faculty("Lombardi, Vince", 90000,
                     "Sociology Department"));
 //            a.addEmployee(new Faculty("Lombardi, Vince", 90000,
 //                    "Sociology Department"));
-            a.addEmployee(new Staff("Smith, Marilee", 11111, 4));
+            everyone.addEmployee(new Staff("Smith, Marilee", 11111, 4));
         }
 
         catch (Exception caught) {
@@ -46,12 +47,12 @@ public class UniversityDriver {
         }
 
         try {
-            a.addStudent(new Undergraduate("Spade, Sam", 456, 2));
-            a.addStudent(new Undergraduate("van Delden, Sebastian", 11000,
+            everyone.addStudent(new Undergraduate("Spade, Sam", 456, 2));
+            everyone.addStudent(new Undergraduate("van Delden, Sebastian", 11000,
                     3));
-            a.addStudent(new Undergraduate("van Delden, Sebastion", 123000,
+            everyone.addStudent(new Undergraduate("van Delden, Sebastion", 123000,
                     4));
-            a.addStudent(new Graduate("Lombardi, Vince", 90000,
+            everyone.addStudent(new Graduate("Lombardi, Vince", 90000,
                    "PhD"));
         }
 
@@ -59,17 +60,19 @@ public class UniversityDriver {
             System.out.println(caughtAgain.getMessage());
         }
 
-        System.out.println("The list of all people: \n");
-        a.printAll();
+        everyone.printEmployees();
+        everyone.sortEmployees();
+        System.out.println();
+        everyone.printEmployees();
+        System.out.println("\n** ----------------------------- **\n");
 
-//        for (Employee p : a) {
-//            p.writeOutput();
-//            System.out.println();
+        everyone.printStudents();
+        everyone.sortStudents();
+        System.out.println();
+        everyone.printStudents();
 
-            // Sort the lists
-       // a.
-            // Print the lists
-
+        System.out.println("\n** ------PRINT ALL METHOD------- **\n");
+        everyone.printAll();
 
         }
 

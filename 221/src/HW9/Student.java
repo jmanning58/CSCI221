@@ -8,6 +8,7 @@ public abstract class Student extends Person
     // 1- freshman, 2- sophomore, 3- junior, 4- senior
     protected int studentNumber; 
 
+
     public Student()
     {
         super();
