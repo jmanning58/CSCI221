@@ -53,5 +53,6 @@ public class Encrypt {
         catch (java.io.IOException e) {
             System.out.println("FILE NOT FOUND");
         }  
+        input.close();
     }
 }
