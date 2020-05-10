@@ -42,6 +42,15 @@ public class Lab2 {
         System.out.println("The value " + target + " was input " + targetTimes + " times");
         System.out.println("The maximum value entered was " + max);
 
+
+        // Part 2 of Lab 2
+        System.out.println("What is your largest whole number you would like to use?");
+        int n = input.nextInt();
+        System.out.println("n\tn^2\tn^3\tn^4");
+
+        for(int i = 1; i <= n; i++) {
+            System.out.println(i + "\t" + i*i + "\t" + i*i*i +"\t" + i*i*i*i);
+        }
     }
 
 }
