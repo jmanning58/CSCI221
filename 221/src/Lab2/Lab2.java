@@ -13,16 +13,35 @@ public class Lab2 {
     public static void main(String[] args) {
 
         int sum = 0, value;
+        int odds = 0;
+        int targetTimes = 0;
+        int max = Integer.MIN_VALUE;
+
         Scanner input = new Scanner(System.in);
+        System.out.println("What is your target number? ");
+        int target = input.nextInt();
         System.out.print("Enter an integer value (0 to quit): ");
         value = input.nextInt();
+
         while (value != 0) {
             sum += value;
             System.out.print("Enter next value (0 to quit): ");
-            value = input.nextInt(); 
+            if(value % 2 != 0)
+                odds += 1;
+
+            if(value == target)
+                targetTimes += 1;
+
+            if(value >= max)
+                max = value;
+
+            value = input.nextInt();
         }
         System.out.println("The sum of the entered values is " + sum);
-        System.out.println(-11%2);
+        System.out.println("The number of values input is " + odds);
+        System.out.println("The value " + target + " was input " + targetTimes + " times");
+        System.out.println("The maximum value entered was " + max);
+
     }
 
 }
