@@ -67,17 +67,23 @@ public class Tester {
                 strOneLength = firstInput.length();
             }
         }
-
+        System.out.println(firstInput + "  a " + secondInput); // Reads correctly---
+        // convert back to string and append to 'total' to stack numbers instead of using placeholder
         while (strOneLength == strTwoLength) {
             for (int j = strOneLength-1; j >= 0 ; j--) {
                 int doubleDigits = columnTotal.addingUp(firstInput.charAt(j), secondInput.charAt(j));
+                System.out.println(firstInput.charAt(j) + " b  " + secondInput.charAt(j));
                 if (carryOver == 1) {
                     doubleDigits += 1;
                     carryOver = 0;
+                    System.out.println(carryOver + " c  " + total);
                 }
+                // But what if it equals 10
+                // -- 10 doesn't register, spits out 0 because you subtract 10
                 else if (doubleDigits > 9) {
                     carryOver++;
                     doubleDigits -= 10;
+                    System.out.println(carryOver + " d  " + total);
                 }
                 total = doubleDigits + total;
                 placeHolder *= 10;
