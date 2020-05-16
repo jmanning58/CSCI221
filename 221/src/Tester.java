@@ -67,7 +67,9 @@ public class Tester {
                 strOneLength = firstInput.length();
             }
         }
-        System.out.println(firstInput + "  a " + secondInput); // Reads correctly---
+        // Reads correctly---
+        System.out.println(firstInput + "  a " + secondInput);
+
         // convert back to string and append to 'total' to stack numbers instead of using placeholder
         while (strOneLength == strTwoLength) {
             for (int j = strOneLength-1; j >= 0 ; j--) {
