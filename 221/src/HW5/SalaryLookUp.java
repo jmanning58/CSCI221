@@ -121,6 +121,7 @@ public class SalaryLookUp {
 
             System.out.println("OK, goodbye.");
         }
+        userInput.close();
     }
 }
  

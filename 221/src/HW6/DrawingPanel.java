@@ -126,7 +126,7 @@ public class DrawingPanel extends FileFilter
                 Scanner input = new Scanner(settingsFile);
                 String animationSaveFileName = input.nextLine();
                 input.close();
-                // *** TODO: delete the file
+                // delete the file
                 System.out.println("***");
                 System.out.println("*** DrawingPanel saving animated GIF: " + 
                         new File(animationSaveFileName).getName());

@@ -31,6 +31,8 @@ public class HW2Algorism {
 		System.out.println("Type your second number: ");
 		String secondInput = request.next();
 		
+		request.close();
+
 		int strOneLength = firstInput.length();
 		int strTwoLength = secondInput.length();
 		

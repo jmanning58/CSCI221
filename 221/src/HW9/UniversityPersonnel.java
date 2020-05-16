@@ -4,18 +4,21 @@ package HW9;
  * Process Persons of all types
  */
 import java.util.*;
+
 public class UniversityPersonnel
 {
     // These lists store the vital information for each member of the 
     // university community
-    private ArrayList<Student> ourStudents;
-    private ArrayList<Employee> ourEmployees;
+    private Person[] ourStudents;
+    private Person[] ourEmployees;
     
     public UniversityPersonnel(){
-       ourStudents = new ArrayList<>();
-       ourEmployees = new ArrayList<>();
+       ourStudents = new Person[21];
+       ourEmployees = new Person[21];
+
     }
-    
+    int iEmployees = 0;
+    int iStudents = 0;
     /**
      * This method, addEmployee, adds a new Faculty or Staff member
      * as long as we do not get two employees with the same employee number
@@ -26,21 +29,16 @@ public class UniversityPersonnel
      */
     public void addEmployee(Employee newHire) throws Exception{
 
-        try {
-            for(int i = 0; i < ourEmployees.size(); i++) {
+        for(int i = 0; i < ourEmployees.length; i++) {
 
+           if (this.ourEmployees[i].compareTo(newHire) == 0) {
+               throw new Exception("Duplicate number, " + newHire.getName() + "cannot be added.");
+           }
 
-                if (this.ourEmployees.get(i).equals(newHire)) {
-                    throw new Exception("Duplicate number, " + newHire.getName() + "cannot be added.");
-                }
             }
+        ourEmployees[iEmployees] = newHire;
+        ++iEmployees;
         }
-        catch (Exception excpt) {
-            System.out.println(excpt.getMessage());
-        }
-        
-    }
-    
       
     /**
      * This method, addStudent, adds a new Faculty or Staff member
@@ -53,56 +51,45 @@ public class UniversityPersonnel
     public void addStudent(Student newAdmit) throws Exception{
 
 
-        for(int i = 0; i < ourStudents.size(); i++) {
+        for(int i = 0; i < ourStudents.length; i++) {
 
 
-            if (this.ourStudents.get(i).compareTo(newAdmit) == 0) {
+            if (this.ourStudents[i].compareTo(newAdmit) == 0) {
                 throw new Exception("Duplicate number, " + newAdmit.getName() + "cannot be added.");
                 }
             }
-        ourStudents.add(newAdmit);
-
-//        catch (Exception excpt) {
-//            System.out.println(excpt.getMessage());
-        }
-
-
+        ourStudents[iStudents] = newAdmit;
+        ++iStudents;
+    }
     
     public void printStudents(){
 
-        for(int i = 0; i < ourStudents.size(); i++) {
-            System.out.println(ourStudents.get(i));
+        System.out.println("\tStudents List\n");
+        for(int i = 0; i < ourStudents.length; i++) {
+
+            System.out.println(ourStudents[i]);
         }
         
     }
     
     public void printEmployees(){
-           
-        for(int i = 0; i < ourEmployees.size(); i++) {
-            System.out.println(ourEmployees.get(i));
+
+        System.out.println("\tEmployees List\n");
+        for(int i = 0; i < ourEmployees.length; i++) {
+
+            System.out.println(ourEmployees[i]);
         }
     }
     
     public void printAll( ){
 
-        // System.out.println("Students:");
-
-        for(int i = 0; i < ourStudents.size(); i++) {
-            System.out.println(ourStudents.get(i));
-        }
-
-        System.out.println("Employees:");
-
-        for(int i = 0; i < ourEmployees.size(); i++) {
-            System.out.println("i + 1" + ourEmployees.get(i));
-        }
+    printStudents();
+    System.out.println();
+    printEmployees();
     }
     
-    public void sortStudents(){
-        Collections.sort(ourStudents);
-    }
+    public void sortStudents(){Arrays.sort(this.ourStudents); }
     
-    public void sortEmployees(){
-        Collections.sort(ourEmployees);
+    public void sortEmployees(){Arrays.sort(this.ourEmployees);
     }
 }

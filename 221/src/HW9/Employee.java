@@ -2,8 +2,7 @@ package HW9;
 
 /**
  * An Employee is a special type of Person
- * 
- * McCauley
+ *
  */
 public abstract class Employee extends Person {
     // instance variables - replace the example below with your own
