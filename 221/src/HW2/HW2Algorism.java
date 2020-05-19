@@ -10,71 +10,58 @@ package HW2;
 import java.util.Scanner;
 
 public class HW2Algorism {
-	
-	public int addingUp(int topNum, int botNum) {
-		int value1 = topNum - '0';
-		int value2 = botNum - '0';
-		int addedSum = value1 + value2;
-		return addedSum;
-	}
 
-	public static void main(String[] args) {
-		
-		String total = "";
-		int carryOver = 0;
-		
-		HW2Algorism columnTotal = new HW2Algorism();
+	public static void main(String [] args) {
+
+		// Take in two numbers from the user
 		Scanner request = new Scanner(System.in);
-		System.out.println("Type your first number: ");
-		String firstInput = request.next();
-		
-		System.out.println("Type your second number: ");
-		String secondInput = request.next();
-		
+		System.out.println("Input your first number: ");
+		String value1 = request.next();
+		System.out.println("Input your second number: ");
+		String value2 = request.next();
 		request.close();
 
-		int strOneLength = firstInput.length();
-		int strTwoLength = secondInput.length();
-		
-		 for (int i = 0; i < strOneLength; i++) {
-			 if (!Character.isDigit(firstInput.charAt(i)))  {
-				 System.out.println("That is not a number.");
-				 return;
-			 }
-		 }
-		 for (int i = 0; i < strTwoLength; i++) {
-			 if (!Character.isDigit(secondInput.charAt(i)))  {
-				 System.out.println("That is not a number.");
-				 return;
-			 } 
-		 }
-		 if (strOneLength > strTwoLength) {
-			 for (int k = strTwoLength; strOneLength > k; k++) {
-				 secondInput = "0" + secondInput;
-				 strTwoLength = secondInput.length();
-			 }
-		 }
-		 if (strTwoLength > strOneLength) {
-			 for (int j = strOneLength; strTwoLength > j; j++) {
-				 firstInput = "0" + firstInput;
-				 strOneLength = firstInput.length();
-			 }
-		 }		 
-		while (strOneLength == strTwoLength) {
-			for (int j = strOneLength-1; j >= 0 ; j--) {
-				int doubleDigits = columnTotal.addingUp(firstInput.charAt(j), secondInput.charAt(j));
-				if (carryOver == 1) {
-					doubleDigits += 1;
-					carryOver = 0;
-				}
-				else if (doubleDigits > 9) {
-					carryOver++;
-					doubleDigits -= 10;
-				}
-				total = doubleDigits + total;
+		// Check to see if both inputs are only numbers
+		for (int i = 0; i <= value1.length() - 1; i++) {
+			if (!Character.isDigit(value1.charAt(i))) {
+				System.out.println("That is not a number.");
+				return;
 			}
-			System.out.println(total);
-			break;
 		}
+		for (int i = 0; i <= value2.length() - 1; i++) {
+			if (!Character.isDigit(value2.charAt(i))) {
+				System.out.println("That is not a number.");
+				return;
+			}
+		}
+		// Verifying both inputs are numbers
+		System.out.println(value1 + " a ");
+		System.out.println(value2 + " b ");
+
+		int placeHolder = 1;
+		int amount1 = 0;
+		// Change first string to an integer
+		for (int i = value1.length() - 1; i >= 0; i--) {
+			// If you don't convert
+			System.out.println(value1 + value2 + " c ");
+			int numberPlaced = value1.charAt(i) -'0';
+			numberPlaced *= placeHolder;
+			placeHolder *= 10;
+			amount1 += numberPlaced;
+		}
+
+		int amount2 = 0;
+		placeHolder = 1;
+		// Change second string to an integer
+		for (int i = value2.length() - 1; i >= 0; i--) {
+			int numberPlaced = value2.charAt(i) - '0';
+			numberPlaced *= placeHolder;
+			placeHolder *= 10;
+			amount2 += numberPlaced;
+		}
+		// Verify that they are integers
+		System.out.println(amount1 + amount2 + " d ");
+		int total = amount1 + amount2;
+		System.out.println(String.valueOf(total));
 	}
 }
