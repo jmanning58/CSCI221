@@ -31,6 +31,7 @@ public class TestGridUI {
             baseP.setY(GridConstants.MAX_PANEL_HEIGHT); straight.setEnd(baseP);
 
             System.out.println("5 " + straight.getEnd().getY());
+            System.out.println("6 " + baseP.getX());
 
             baseGrid.addLine(straight);
             baseP.setX(GridConstants.MAX_PANEL_WIDTH); baseP.setY(i); straight.setEnd(baseP);
@@ -42,6 +43,8 @@ public class TestGridUI {
             baseGrid.addLine(straight);
         }
     }
+
+    System.out.println("7 " + baseP.getY());
 
   /*  // Generating the standard points to be used as a base
     for(int i = 0; 2 >= i; i++) {
