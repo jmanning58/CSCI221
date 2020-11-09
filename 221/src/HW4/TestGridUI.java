@@ -17,8 +17,8 @@ public class TestGridUI {
     public static void main(String[] args) {
 
     GridUI baseGrid = new GridUI();
-    GridUI gridWin = new GridUI();
-    GridUI lastGrid = new GridUI();
+    //GridUI gridWin = new GridUI();
+    //GridUI lastGrid = new GridUI();
     Lines1 straight = new Lines1();
 
     Points1 baseP = new Points1(0, 0);
@@ -28,23 +28,28 @@ public class TestGridUI {
         if(i == 0) {
             baseP.setX(i); baseP.setY(i); straight.setStart(baseP);
 
+            System.out.println("3 " + straight.getStart().getX());
+            System.out.println("4 " + straight.getStart().getY());
+
             baseP.setY(GridConstants.MAX_PANEL_HEIGHT); straight.setEnd(baseP);
 
-            System.out.println("5 " + straight.getEnd().getY());
-            System.out.println("6 " + baseP.getX());
+            System.out.println("5 " + straight.getEnd().getX());
+            System.out.println("6 " + straight.getEnd().getY());
+            System.out.println("7 " + straight.isValid());
 
             baseGrid.addLine(straight);
-            baseP.setX(GridConstants.MAX_PANEL_WIDTH); baseP.setY(i); straight.setEnd(baseP);
-            baseGrid.addLine(straight);
+
+            //baseP.setX(GridConstants.MAX_PANEL_WIDTH); baseP.setY(i); straight.setEnd(baseP);
+            //baseGrid.addLine(straight);
         }
-        if(i == 1) {
-            baseP.setX(i * GridConstants.MAX_PANEL_WIDTH); baseP.setY(i * GridConstants.MAX_PANEL_HEIGHT);
-            straight.setStart(baseP);
-            baseGrid.addLine(straight);
-        }
+//        if(i == 1) {
+//            baseP.setX(i * GridConstants.MAX_PANEL_WIDTH); baseP.setY(i * GridConstants.MAX_PANEL_HEIGHT);
+//            straight.setStart(baseP);
+//            baseGrid.addLine(straight);
+//        }
     }
 
-    System.out.println("7 " + baseP.getY());
+    System.out.println("10 " + baseP.getY());
 
   /*  // Generating the standard points to be used as a base
     for(int i = 0; 2 >= i; i++) {

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0abf2475-fa16-4f02-8463-0e9663ac7d9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/221/HW4/Lines1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/221/HW4/Lines1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HW4/GridConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW4/GridConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HW4/TestGridUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW4/TestGridUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ManningJ/HW1/HW starter code/ArrayList.java" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Code/CSCI220" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -123,6 +123,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -137,26 +138,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="609" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604345396613">
+    <state x="609" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604938011725">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="609" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604345396613" />
-    <state width="1815" height="250" key="GridCell.Tab.0.bottom" timestamp="1604460895654">
+    <state x="609" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604938011725" />
+    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1604774537751">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604460895654" />
-    <state width="1815" height="250" key="GridCell.Tab.0.center" timestamp="1604460895654">
+    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604774537751" />
+    <state width="1815" height="250" key="GridCell.Tab.0.bottom" timestamp="1604941650909">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.center/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604460895654" />
-    <state width="1815" height="250" key="GridCell.Tab.0.left" timestamp="1604460895654">
+    <state width="1815" height="250" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
+    <state width="1815" height="250" key="GridCell.Tab.0.center" timestamp="1604941650909">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.left/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604460895654" />
-    <state width="1815" height="250" key="GridCell.Tab.0.right" timestamp="1604460895654">
+    <state width="1815" height="250" key="GridCell.Tab.0.center/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
+    <state width="1815" height="250" key="GridCell.Tab.0.left" timestamp="1604941650909">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.right/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604460895654" />
+    <state width="1815" height="250" key="GridCell.Tab.0.left/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
+    <state width="1815" height="250" key="GridCell.Tab.0.right" timestamp="1604941650909">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="250" key="GridCell.Tab.0.right/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

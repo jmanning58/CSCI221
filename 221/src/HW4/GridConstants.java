@@ -12,6 +12,7 @@ package HW4;
  * DO NOT MODIFY THIS CLASS
  *
  */
+
 public class GridConstants {
 	
 	/**
