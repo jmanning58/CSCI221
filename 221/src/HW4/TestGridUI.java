@@ -22,20 +22,15 @@ public class TestGridUI {
     Lines1 straight = new Lines1();
 
     Points1 baseP = new Points1(0, 0);
+    Points1 endP = new Points1(0, 0);
 
     // For baseGrid borders
     for(int i = 0; 1 >= i; i++) {
         if(i == 0) {
-            baseP.setX(i); baseP.setY(i); straight.setStart(baseP);
 
-            System.out.println("3 " + straight.getStart().getX());
-            System.out.println("4 " + straight.getStart().getY());
+            endP.setY(GridConstants.MAX_PANEL_HEIGHT); straight.setEnd(baseP);
 
-            baseP.setY(GridConstants.MAX_PANEL_HEIGHT); straight.setEnd(baseP);
-
-            System.out.println("5 " + straight.getEnd().getX());
-            System.out.println("6 " + straight.getEnd().getY());
-            System.out.println("7 " + straight.isValid());
+            straight.setStart(baseP); straight.setEnd(endP);
 
             baseGrid.addLine(straight);
 

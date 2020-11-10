@@ -28,7 +28,7 @@ public class GridUI extends JFrame {
 		gridPanel = new GridPanel();
 		
 		JPanel contentPane = (JPanel)this.getContentPane();
-		
+
 		contentPane.setLayout( new BorderLayout() );
 		
 		contentPane.setBorder( BorderFactory.createEmptyBorder( GridConstants.PAD,
@@ -58,9 +58,10 @@ public class GridUI extends JFrame {
 	public void addLine( Lines1 line ) {
 		
 		gridPanel.addLine( line );
-		
+
+		gridPanel.setStroke(5);
+
 		gridPanel.draw();
-		
 		
 	} // end addLine() method
 	

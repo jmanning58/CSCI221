@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0abf2475-fa16-4f02-8463-0e9663ac7d9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW4/GridConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW4/GridConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HW4/GridUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW4/GridUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HW4/TestGridUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW4/TestGridUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,22 +146,26 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604774537751" />
-    <state width="1815" height="250" key="GridCell.Tab.0.bottom" timestamp="1604941650909">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1495" height="250" key="GridCell.Tab.0.bottom" timestamp="1605024475042">
+      <screen x="-1538" y="181" width="1538" height="900" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
-    <state width="1815" height="250" key="GridCell.Tab.0.center" timestamp="1604941650909">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1495" height="250" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1538.181.1538.900@-1538.181.1538.900" timestamp="1605024475042" />
+    <state width="1815" height="250" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604942699701" />
+    <state width="1495" height="250" key="GridCell.Tab.0.center" timestamp="1605024475042">
+      <screen x="-1538" y="181" width="1538" height="900" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.center/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
-    <state width="1815" height="250" key="GridCell.Tab.0.left" timestamp="1604941650909">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1495" height="250" key="GridCell.Tab.0.center/0.0.1858.1080/-1538.181.1538.900@-1538.181.1538.900" timestamp="1605024475042" />
+    <state width="1815" height="250" key="GridCell.Tab.0.center/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604942699701" />
+    <state width="1495" height="250" key="GridCell.Tab.0.left" timestamp="1605024475042">
+      <screen x="-1538" y="181" width="1538" height="900" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.left/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
-    <state width="1815" height="250" key="GridCell.Tab.0.right" timestamp="1604941650909">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1495" height="250" key="GridCell.Tab.0.left/0.0.1858.1080/-1538.181.1538.900@-1538.181.1538.900" timestamp="1605024475042" />
+    <state width="1815" height="250" key="GridCell.Tab.0.left/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604942699701" />
+    <state width="1495" height="250" key="GridCell.Tab.0.right" timestamp="1605024475042">
+      <screen x="-1538" y="181" width="1538" height="900" />
     </state>
-    <state width="1815" height="250" key="GridCell.Tab.0.right/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604941650909" />
+    <state width="1495" height="250" key="GridCell.Tab.0.right/0.0.1858.1080/-1538.181.1538.900@-1538.181.1538.900" timestamp="1605024475042" />
+    <state width="1815" height="250" key="GridCell.Tab.0.right/0.0.1858.1080/-1538.181.1538.900@0.0.1858.1080" timestamp="1604942699701" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
